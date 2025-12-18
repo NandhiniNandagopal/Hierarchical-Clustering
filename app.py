@@ -12,7 +12,7 @@ st.caption("Agglomerative Clustering (Ward linkage)")
 
 # ---------- Load saved objects ----------
 # Assumes you saved these during training
-with open("hc_objects.pkl", "rb") as f:
+with open("hierarchical_model_bundle.pkl", "rb") as f:
     scaler, cluster_centroids, data = pickle.load(f)
 
 st.divider()
@@ -63,3 +63,4 @@ if st.button("Find Cluster"):
 
 st.divider()
 st.caption("Hierarchical Clustering • Streamlit")
+
